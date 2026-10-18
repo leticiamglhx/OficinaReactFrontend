@@ -1,0 +1,171 @@
+﻿.aplicacao {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.cabecalho {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.cabecalho h1 {
+  margin-bottom: 10px;
+  color: #6442bd;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.cabecalho p {
+  color: #716b82;
+}
+
+.cartao-tarefas {
+  padding: 32px;
+  border: 1px solid #e8e3f0;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 12px 36px rgba(55, 35, 95, 0.06);
+}
+
+.formulario-tarefa label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.campos-formulario {
+  display: flex;
+  gap: 12px;
+}
+
+.campos-formulario input {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  padding: 13px 16px;
+  border: 1px solid #ded8e9;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #29243d;
+}
+
+.campos-formulario input::placeholder {
+  color: #81798f;
+  opacity: 1;
+}
+
+.campos-formulario input:disabled {
+  background-color: #f8f7fb;
+  opacity: 1;
+  -webkit-text-fill-color: #81798f;
+}
+
+.botao-adicionar {
+  padding: 13px 24px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #6442bd;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.botao-adicionar:disabled {
+  background-color: #8270b0;
+}
+
+.campos-formulario input:focus-visible,
+.botao-adicionar:focus-visible,
+.botao-excluir:focus-visible {
+  outline: 3px solid #a996e0;
+  outline-offset: 3px;
+}
+
+.lista-tarefas {
+  margin-top: 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.mensagem-vazia {
+  padding: 56px 20px;
+  border: 1px dashed #ded8e9;
+  border-radius: 12px;
+  background-color: #fcfbfe;
+  color: #716b82;
+  text-align: center;
+}
+
+.item-tarefa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+  padding: 16px;
+  border: 1px solid #e8e3f0;
+  border-radius: 12px;
+  background-color: #fcfbfe;
+}
+
+.titulo-tarefa {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.botao-excluir {
+  flex-shrink: 0;
+  padding: 8px 12px;
+  border: 1px solid #eed1d7;
+  border-radius: 8px;
+  background-color: #fff2f4;
+  color: #a13d55;
+  font-size: 0.875rem;
+}
+
+.botao-excluir:disabled {
+  color: #916775;
+  background-color: #faf4f6;
+}
+
+@media (max-width: 520px) {
+  .aplicacao {
+    padding: 48px 16px;
+  }
+
+  .cabecalho h1 {
+    font-size: 2rem;
+  }
+
+  .cartao-tarefas {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .campos-formulario {
+    flex-direction: column;
+  }
+
+  .mensagem-vazia {
+    padding: 40px 16px;
+  }
+
+  .item-tarefa {
+    flex-wrap: wrap;
+  }
+}
+
+.itens-tarefas {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mensagem-erro {
+  margin-bottom: 20px;
+  color: #a13d55;
+}
